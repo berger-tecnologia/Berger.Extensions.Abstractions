@@ -2,6 +2,5 @@
 {
     public interface IBaseEntity : IEntity<Guid>, IAuditable
     {
-        void Delete();
     }
 }

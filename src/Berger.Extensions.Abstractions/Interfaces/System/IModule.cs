@@ -1,13 +1,13 @@
 ﻿namespace Berger.Extensions.Abstractions
 {
-    public interface ITenant
+    public interface IModule : IEntity<Guid>
     {
         #region Properties
-        Guid TenantID { get; set; }
+        string Name { get; set; }
         #endregion
 
         #region Methods
-        void SetTenant(Guid id) => TenantID = id;
+        public void SetModule(string name);
         #endregion
     }
 }

@@ -1,8 +1,7 @@
 ﻿namespace Berger.Extensions.Abstractions
 {
-    public interface IModule
+    public interface ITenant
     {
         string Name { get; set; }
-        public void SetName(string name);
     }
 }
