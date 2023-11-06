@@ -2,12 +2,12 @@
 
 namespace Berger.Extensions.Abstractions
 {
-    public interface IRepository<T>
+    public interface IRepository<T> : ICrud<T>
     {
         IQueryable<T> Get();
+        T GetById(Guid id);
         IQueryable<T> GetIgnoreFilters();
         IQueryable<T> Get(Expression<Func<T, bool>> expression);
-        T GetById(Guid id);
         T FirstOrDefault(Expression<Func<T, bool>> expression);
         T Add(T element, bool detach = false);
         void Add(IQueryable<T> elements, bool detach = false);
