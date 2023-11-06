@@ -1,10 +1,8 @@
 ﻿namespace Berger.Extensions.Abstractions
 {
-    public interface IMessage<T> where T : Enum
+    public interface IMessage<T> : IEntity<Guid> where T : Enum
     {
         T MessageType { get; }
-        string Body { get; set; }
-        string Subject { get; set; }
-        string Recipient { get; set; }
+        string Message { get; set; }
     }
 }
