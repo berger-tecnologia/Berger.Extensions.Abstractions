@@ -1,11 +1,11 @@
 ﻿namespace Berger.Extensions.Abstractions
 {
-    public interface IAsset<T>
+    public interface IAsset<T> where T : IFileExtension
     {
         #region Properties
         Guid ContainerID { get; set; }
         IContainer Container { get; set; }
-        T FileExtension { get; }
+        T FileExtension { get; set; }
         string AttributeID { get; set; }
         string Name { get; set; }
         string Path { get; set; }
