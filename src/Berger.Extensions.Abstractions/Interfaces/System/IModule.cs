@@ -1,6 +1,6 @@
 ﻿namespace Berger.Extensions.Abstractions
 {
-    public interface IModule : IEntity<Guid>
+    public interface IModule : IBaseEntity<Guid>
     {
         #region Properties
         string Name { get; set; }
