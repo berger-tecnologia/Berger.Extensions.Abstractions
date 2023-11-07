@@ -6,6 +6,5 @@
         string Name { get; set; }
         string Description { get; set; }
         bool Visibility { get; set; }
-        List<IAsset<IFileExtension>> Assets { get; set; }
     }
 }
