@@ -1,6 +1,6 @@
 ﻿namespace Berger.Extensions.Abstractions
 {
-    public class BaseEntity : Auditable, IBaseEntity<Guid>
+    public class BaseEntity : Ownership, IBaseEntity<Guid>
     {
         #region Properties
         public Guid ID { get; set; }
