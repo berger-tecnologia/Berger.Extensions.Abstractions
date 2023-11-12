@@ -1,6 +1,6 @@
 ﻿namespace Berger.Extensions.Abstractions
 {
-    public interface ICode
+    public interface ICoded
     {
         string Code { get; set; }
     }

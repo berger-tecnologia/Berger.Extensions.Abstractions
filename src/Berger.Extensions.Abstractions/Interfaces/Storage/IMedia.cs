@@ -1,13 +1,14 @@
 ﻿namespace Berger.Extensions.Abstractions
 {
-    public interface IBaseEntity<T> : IAuditable
+    public interface IMedia
     {
         #region Properties
-        T Id { get; set; }
+        string Url { get; set; }
+        string Alt { get; set; }
+        bool Featured { get; set; }
         #endregion
 
         #region Methods
-        void SetId(T id);
         #endregion
     }
 }

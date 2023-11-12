@@ -1,9 +1,9 @@
 ﻿namespace Berger.Extensions.Abstractions
 {
-    public interface ITemplate
+    public interface IAttributeValued
     {
         #region Properties
-        string Name { get; set; }
+        List<IAttributeValue> AttributeValues { get; set; }
         #endregion
     }
 }

@@ -1,13 +1,13 @@
 ﻿namespace Berger.Extensions.Abstractions
 {
-    public interface IBaseEntity<T> : IAuditable
+    public interface ISessionable
     {
         #region Properties
-        T Id { get; set; }
+        public Guid? SessionId { get; }
         #endregion
 
         #region Methods
-        void SetId(T id);
+        public void SetSessionId(Guid id);
         #endregion
     }
 }

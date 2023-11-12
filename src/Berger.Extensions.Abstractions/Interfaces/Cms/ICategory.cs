@@ -1,9 +1,9 @@
 ﻿namespace Berger.Extensions.Abstractions
 {
-    public interface ITemplate
+    public interface ICategory
     {
         #region Properties
-        string Name { get; set; }
+        Guid CategoryId { get; set; }
         #endregion
     }
 }

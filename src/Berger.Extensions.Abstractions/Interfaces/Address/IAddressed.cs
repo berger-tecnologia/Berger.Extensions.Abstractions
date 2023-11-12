@@ -1,9 +1,9 @@
 ﻿namespace Berger.Extensions.Abstractions
 {
-    public interface ITemplate
+    public interface IAddressed
     {
         #region Properties
-        string Name { get; set; }
+        List<IAddress> Addresses { get; set; }
         #endregion
     }
 }

@@ -2,5 +2,6 @@
 {
     public interface IGender
     {
+        IGender Gender { get; set; }
     }
 }
