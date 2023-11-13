@@ -1,6 +1,6 @@
 ﻿namespace Berger.Extensions.Abstractions
 {
-    public interface ICrud<T>
+    public interface ICredential
     {
     }
 }

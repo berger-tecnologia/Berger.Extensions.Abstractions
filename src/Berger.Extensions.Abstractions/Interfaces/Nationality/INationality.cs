@@ -1,13 +1,13 @@
 ﻿namespace Berger.Extensions.Abstractions
 {
-    public interface ISlug : IName
+    public interface INationality
     {
         #region Properties
-        public string Slug { get; }
+        string Name { get; set; }
         #endregion
 
         #region Methods
-        public void SetSlug(string slug);
+        string GetNationality();
         #endregion
     }
 }

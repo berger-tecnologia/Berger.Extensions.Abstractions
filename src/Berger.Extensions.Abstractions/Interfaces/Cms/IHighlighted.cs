@@ -1,9 +1,9 @@
 ﻿namespace Berger.Extensions.Abstractions
 {
-    public interface ITemplate
+    public interface IHighlighted
     {
         #region Properties
-        string Name { get; set; }
+        public bool Highlighted { get; set; }
         #endregion
     }
 }

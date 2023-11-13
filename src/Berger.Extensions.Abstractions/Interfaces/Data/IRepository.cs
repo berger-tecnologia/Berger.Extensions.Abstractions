@@ -2,7 +2,7 @@
 
 namespace Berger.Extensions.Abstractions
 {
-    public interface IRepository<T> : ICrud<T>
+    public interface IRepository<T>
     {
         IQueryable<T> Get();
         T GetById(Guid id);

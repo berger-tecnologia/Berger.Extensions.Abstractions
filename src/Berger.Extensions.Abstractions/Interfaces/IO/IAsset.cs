@@ -6,7 +6,7 @@
         Guid ContainerID { get; set; }
         IContainer Container { get; set; }
         T FileExtension { get; set; }
-        string AttributeID { get; set; }
+        string AttributeId { get; set; }
         string Name { get; set; }
         string Path { get; set; }
         #endregion
