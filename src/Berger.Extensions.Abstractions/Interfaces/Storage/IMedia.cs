@@ -7,8 +7,5 @@
         string Alt { get; set; }
         bool Featured { get; set; }
         #endregion
-
-        #region Methods
-        #endregion
     }
 }
