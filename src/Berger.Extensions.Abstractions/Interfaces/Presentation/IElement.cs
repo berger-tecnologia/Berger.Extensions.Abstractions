@@ -12,6 +12,7 @@
         string Description { get; set; }
         int Order { get; set; }
         bool IsModal { get; set; }
+        string AttributeId { get; set; }
         #endregion
     }
 }
