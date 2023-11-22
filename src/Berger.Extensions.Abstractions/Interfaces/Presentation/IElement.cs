@@ -1,18 +1,17 @@
 ﻿namespace Berger.Extensions.Abstractions
 {
-    public interface IElement
+    public interface IElement<T> : IHtmlAttribute where T : Enum
     {
         #region Properties
         Guid? ParentId { get; set; }
         Guid? ColorId { get; set; }
-        string Name { get; set; }
+        List<IElement<T>> Menus { get; set; }
         string Slug { get; set; }
-        string Href { get; set; }
         string Title { get; set; }
+        string Subtitle { get; set; }
         string Description { get; set; }
-        int Order { get; set; }
+        int Position { get; set; }
         bool IsModal { get; set; }
-        string AttributeId { get; set; }
         #endregion
     }
 }
