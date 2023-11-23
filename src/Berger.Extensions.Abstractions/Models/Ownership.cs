@@ -2,10 +2,10 @@
 {
     public class Ownership : Auditable
     {
-        public Guid? UserID { get; set; }
-        public Guid? OwnerID { get; set; }
-        public Guid? SenderID { get; set; }
-        public Guid? DriverID { get; set; }
-        public Guid? ReceiverID { get; set; }
+        public Guid? UserId { get; set; }
+        public Guid? OwnerId { get; set; }
+        public Guid? SenderId { get; set; }
+        public Guid? DriverId { get; set; }
+        public Guid? ReceiverId { get; set; }
     }
 }

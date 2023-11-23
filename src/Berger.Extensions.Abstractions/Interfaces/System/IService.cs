@@ -1,8 +1,8 @@
 ﻿namespace Berger.Extensions.Abstractions
 {
-    public interface IService<T>
+    public interface IBaseService<T>
     {
         IQueryable<T> Get();
-        T GetById(Guid id);
+        T GetById(Guid Id);
     }
 }

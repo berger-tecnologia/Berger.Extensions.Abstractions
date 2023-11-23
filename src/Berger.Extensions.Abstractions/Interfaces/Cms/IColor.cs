@@ -2,6 +2,6 @@
 {
     public interface IColor
     {
-        public Guid ColorID { get; }
+        public Guid ColorId { get; }
     }
 }

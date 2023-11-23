@@ -2,6 +2,6 @@
 {
     public interface IReview
     {
-        public Guid ReviewID { get; }
+        public Guid ReviewId { get; }
     }
 }

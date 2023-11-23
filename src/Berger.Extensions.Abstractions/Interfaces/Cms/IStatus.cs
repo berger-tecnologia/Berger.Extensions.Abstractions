@@ -2,6 +2,6 @@
 {
     public interface IStatus
     {
-        public Guid StatusID { get; }
+        public Guid StatusId { get; }
     }
 }

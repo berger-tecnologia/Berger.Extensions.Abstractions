@@ -2,6 +2,6 @@
 {
     public interface ISoftware
     {
-        public Guid SoftwareID { get; set; }
+        public Guid SoftwareId { get; set; }
     }
 }

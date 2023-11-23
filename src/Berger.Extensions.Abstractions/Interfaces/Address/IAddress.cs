@@ -4,7 +4,7 @@
     {
         #region Properties
         Guid CountryId { get; set; }
-        string GooglePlaceID { get; set; }
+        string GooglePlaceId { get; set; }
         string Label { get; set; }
         string Street { get; set; }
         string Number { get; set; }

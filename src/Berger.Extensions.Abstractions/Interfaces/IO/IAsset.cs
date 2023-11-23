@@ -3,7 +3,7 @@
     public interface IAsset<T> where T : IFileExtension
     {
         #region Properties
-        Guid ContainerID { get; set; }
+        Guid ContainerId { get; set; }
         IContainer Container { get; set; }
         T FileExtension { get; set; }
         string AttributeId { get; set; }
