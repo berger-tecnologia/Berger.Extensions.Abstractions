@@ -2,5 +2,7 @@
 {
     public interface IBaseApplication<T>
     {
+        List<T> Get();
+        T GetById(Guid id);
     }
 }

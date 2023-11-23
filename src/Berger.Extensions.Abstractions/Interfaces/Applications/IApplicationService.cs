@@ -1,6 +1,6 @@
 ﻿namespace Berger.Extensions.Abstractions
 {
-    public interface IApplicationBaseService<TSource, TDestination> : IPagination<TSource> where TSource : class, IBaseEntity<Guid> where TDestination : IBaseEntity<Guid>
+    public interface IApplicationService<TSource, TDestination> : IPagination<TSource> where TSource : class, IBaseEntity<Guid> where TDestination : IBaseEntity<Guid>
     {
         TSource GetById(Guid Id);
         List<TSource> Get();
