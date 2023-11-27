@@ -1,6 +1,6 @@
 ﻿namespace Berger.Extensions.Abstractions
 {
-    public interface ISessionService
+    public interface ISession
     {
         void Logoff();
         Guid GetSid();

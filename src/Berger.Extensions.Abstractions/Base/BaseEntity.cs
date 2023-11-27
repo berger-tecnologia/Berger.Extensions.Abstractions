@@ -11,6 +11,10 @@
         {
             this.Id = id;
         }
+        public void SetId()
+        {
+            this.Id = Guid.NewGuid();
+        }
         #endregion
     }
 }

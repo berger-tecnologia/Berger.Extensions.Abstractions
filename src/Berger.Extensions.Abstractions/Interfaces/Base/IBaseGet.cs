@@ -1,8 +1,8 @@
 ﻿namespace Berger.Extensions.Abstractions
 {
-    public interface IBaseApplication<T>
+    public interface IBaseGet<T, TResult>
     {
-        List<T> Get();
+        TResult Get();
         T GetById(Guid id);
     }
 }
