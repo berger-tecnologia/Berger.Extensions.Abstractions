@@ -19,5 +19,6 @@
         public const string Forbidden = "Forbidden";
         public const string Cancelled = "Cancelled";
         public const string Configure = "Configure";
+        public const string Authorization = "Authorization";
     }
 }
