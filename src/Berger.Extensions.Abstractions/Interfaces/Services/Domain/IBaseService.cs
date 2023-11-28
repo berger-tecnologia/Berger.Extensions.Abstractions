@@ -1,7 +1,9 @@
 ﻿namespace Berger.Extensions.Abstractions
 {
-    public interface IBaseService<T> : IBaseGet<T, IQueryable<T>>
+    public interface IBaseService<T> 
     {
+        IQueryable<T> Get();
+        T GetById(Guid id);
         T Add(T source);
         void Add(IQueryable<T> source);
         Task<T> AddAsync(T source);

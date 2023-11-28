@@ -1,6 +1,6 @@
 ﻿namespace Berger.Extensions.Abstractions
 {
-    public interface IDynamic<T> where T : class
+    public interface IStrapper<T> where T : class
     {
         T Create();
     }
