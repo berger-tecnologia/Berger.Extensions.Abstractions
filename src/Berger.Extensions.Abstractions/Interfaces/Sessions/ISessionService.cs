@@ -9,5 +9,6 @@
         Guid GetGroupSid();
         string GetEmail();
         List<string> GetRole();
+        Task<bool> Check(string ip, string token);
     }
 }
