@@ -1,6 +1,6 @@
 ﻿namespace Berger.Extensions.Abstractions
 {
-    public interface IApplicationService<TSource, TDestination> : IPagination<TSource> 
+    public interface IBaseApplication<TSource, TDestination> : IPagination<TSource> 
         where TSource : BaseEntity
         where TDestination : BaseEntity
     {
