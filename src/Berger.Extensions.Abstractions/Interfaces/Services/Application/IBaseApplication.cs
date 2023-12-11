@@ -8,6 +8,7 @@
         TSource GetById(Guid id);
         TSource Add(TSource source);
         TSource Update(TSource source);
+        TSource Manage(TSource source);
         void Delete(Guid Id);
     }
 }
