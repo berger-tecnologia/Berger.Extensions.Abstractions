@@ -3,7 +3,8 @@
     public interface IBaseService<T> 
     {
         IQueryable<T> Get();
-        T GetById(Guid id);
+		IQueryable<T> Get(IEnumerable<Guid> ids);
+		T GetById(Guid id);
         T Add(T source);
         void Add(IQueryable<T> source);
         Task<T> AddAsync(T source);

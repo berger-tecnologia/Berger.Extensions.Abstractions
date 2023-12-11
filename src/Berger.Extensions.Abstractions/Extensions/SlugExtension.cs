@@ -11,7 +11,7 @@
         {
             entity.CategoryId = id;
         }
-        public static void SetName(this INamed entity, string name)
+        public static void SetName(this ISearchable entity, string name)
         {
             entity.Name = name;
         }
