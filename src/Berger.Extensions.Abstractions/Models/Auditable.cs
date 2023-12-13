@@ -6,7 +6,7 @@
         public bool Deleted { get; set; }
         public DateTime? DeletedOn { get; set; }
         public DateTime? ModifiedOn { get; set; }
-        public DateTime CreatedOn { get; set; } = DateTime.UtcNow;
+        public DateTime CreatedOn { get; set; }
         #endregion
 
         #region Methods
