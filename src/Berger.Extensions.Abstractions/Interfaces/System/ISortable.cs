@@ -2,6 +2,6 @@
 {
     public interface ISortable
     {
-        public int Sorting { get; }
+        public int Position { get; }
     }
 }

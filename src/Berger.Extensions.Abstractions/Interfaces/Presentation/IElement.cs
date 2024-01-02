@@ -4,7 +4,6 @@
     {
         #region Properties
         Guid? ParentId { get; set; }
-        Guid? ColorId { get; set; }
         List<IElement<T>> Menus { get; set; }
         string Slug { get; set; }
         string Title { get; set; }

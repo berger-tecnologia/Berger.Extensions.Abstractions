@@ -3,6 +3,7 @@
     public class Auditable : IAuditable
     {
         #region Properties
+        public Guid? ModifiedBy { get; set; }
         public bool Deleted { get; set; }
         public DateTime? DeletedOn { get; set; }
         public DateTime? ModifiedOn { get; set; }

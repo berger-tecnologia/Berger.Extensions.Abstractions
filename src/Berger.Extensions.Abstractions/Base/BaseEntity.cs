@@ -13,7 +13,7 @@
         }
         public void SetId()
         {
-            this.Id = Guid.NewGuid();
+            this.Id = Guid.Parse("xxx");
         }
         #endregion
     }
