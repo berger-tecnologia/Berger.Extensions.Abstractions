@@ -1,4 +1,7 @@
-﻿namespace Berger.Extensions.Abstractions
+﻿using System;
+using System.Collections.Generic;
+
+namespace Berger.Extensions.Abstractions
 {
     public interface IBaseApplication<TSource, TDestination> : IPagination<TSource> 
         where TSource : BaseEntity

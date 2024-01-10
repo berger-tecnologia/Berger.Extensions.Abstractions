@@ -4,7 +4,7 @@ namespace Berger.Extensions.Abstractions
 {
     public interface IRepository<T>
     {
-        IQueryable<T> Get();
+        IQueryable<T> Get(bool tracking = false);
         T GetById(Guid Id);
         IQueryable<T> GetIgnoreFilters();
         IQueryable<T> Get(Expression<Func<T, bool>> expression);

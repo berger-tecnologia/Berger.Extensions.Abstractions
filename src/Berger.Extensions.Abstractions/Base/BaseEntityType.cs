@@ -1,9 +1,9 @@
 ﻿namespace Berger.Extensions.Abstractions
 {
-    public class BaseModelEntity : BaseEntity
+    public class BaseEntityType : BaseEntity
     {
         #region Properties
-        public Guid ModelId { get; set; }
+        public Guid EntityTypeId { get; set; }
         #endregion
     }
 }
