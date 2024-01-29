@@ -7,7 +7,7 @@
         string Subject { get; }
         string Recipient { get; }
         Guid? PhoneId { get; set; }
-        Guid PlatformId { get; set; }
+        Guid ApplicationId { get; set; }
         Guid? CultureId { get; set; }
         Guid InteractionId { get; set; }
         string TemplateUrl { get; set; }
