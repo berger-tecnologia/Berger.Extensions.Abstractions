@@ -3,7 +3,7 @@
     public interface IUserOwned : IBaseEntity<Guid>
     {
         #region Properties
-        public Guid? UserId { get; set; }
+        public Guid UserId { get; set; }
         #endregion
     }
 }
