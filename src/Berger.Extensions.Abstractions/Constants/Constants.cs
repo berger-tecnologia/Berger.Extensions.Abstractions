@@ -5,7 +5,6 @@
         public const string Id = "id";
         public const string Jwt = "Jwt";
         public const string User = "User";
-        public const string Owner = "Owner";
         public const string Guest = "Guest";
         public const string Token = "Token";
         public const string Error = "Error";

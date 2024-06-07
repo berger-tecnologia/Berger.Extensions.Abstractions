@@ -4,8 +4,8 @@
     {
         #region Properties
         public Guid? ModifiedBy { get; set; }
-        public bool Deleted { get; set; }
-        public DateTime CreatedOn { get; set; }
+        public bool Deleted { get; set; } = false;
+        public DateTime CreatedOn { get; set; } = DateTime.UtcNow;
         public DateTime? DeletedOn { get; set; }
         public DateTime? ModifiedOn { get; set; }
         #endregion

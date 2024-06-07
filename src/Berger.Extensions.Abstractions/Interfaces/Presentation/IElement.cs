@@ -9,7 +9,7 @@
         string Title { get; set; }
         string Subtitle { get; set; }
         string Description { get; set; }
-        int Sort { get; set; }
+        int Index { get; set; }
         bool IsModal { get; set; }
         #endregion
     }

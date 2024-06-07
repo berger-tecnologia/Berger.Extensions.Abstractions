@@ -9,7 +9,7 @@
         Guid? PhoneId { get; set; }
         Guid ApplicationId { get; set; }
         Guid? CultureId { get; set; }
-        Guid ConversationId { get; set; }
+        Guid InteractionId { get; set; }
         string TemplateUrl { get; set; }
         List<KeyValuePair<string, string>> Data { get; set; }
         string Content { get; set; }
