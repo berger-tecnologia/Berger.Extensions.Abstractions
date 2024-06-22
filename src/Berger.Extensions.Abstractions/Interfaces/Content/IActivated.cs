@@ -1,6 +1,6 @@
 ﻿namespace Berger.Extensions.Abstractions
 {
-    public interface IActive
+    public interface IActivated
     {
         public bool Active { get; }
     }

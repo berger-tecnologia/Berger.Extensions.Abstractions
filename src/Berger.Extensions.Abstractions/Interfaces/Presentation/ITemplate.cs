@@ -2,8 +2,5 @@
 {
     public interface ITemplate
     {
-        #region Properties
-        string Name { get; set; }
-        #endregion
     }
 }

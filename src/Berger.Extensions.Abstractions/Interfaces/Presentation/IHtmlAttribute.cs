@@ -1,19 +1,17 @@
 ﻿namespace Berger.Extensions.Abstractions
 {
-    public interface IBaseElement<T> where T : Enum
+    public interface IHtmlAttribute : IBaseEntity<Guid>
     {
         #region Properties
-        T ElementType { get; set; }
+        string Name { get; set; }
+        string AttributeId { get; set; }
         string Href { get; set; }
         string Class { get; set; }
         string Style { get; set; }
-        string Target { get; set; }
         #endregion
 
         #region Methods
-        void SetType(T type);
-        void SetHref(string link);
-        void SetClass(string classValue);
+        void SetAttributeId(string attributeId);
         #endregion
     }
 }

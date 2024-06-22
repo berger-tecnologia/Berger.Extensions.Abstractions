@@ -2,6 +2,6 @@
 {
     public interface IPreference
     {
-        public Guid PreferenceID { get; }
+        public Guid PreferenceId { get; }
     }
 }

@@ -7,7 +7,7 @@
         #endregion
 
         #region Methods
-        public void SetSessionId(Guid id);
+        public void SetSessionId(Guid Id);
         #endregion
     }
 }

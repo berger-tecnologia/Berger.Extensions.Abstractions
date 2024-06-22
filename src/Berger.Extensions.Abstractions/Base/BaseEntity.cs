@@ -1,6 +1,6 @@
 ﻿namespace Berger.Extensions.Abstractions
 {
-    public class BaseEntity : Ownership, IBaseEntity<Guid>
+    public class BaseEntity : Auditable, IBaseEntity<Guid>
     {
         #region Properties
         public Guid Id { get; set; }
@@ -10,6 +10,10 @@
         public void SetId(Guid id)
         {
             this.Id = id;
+        }
+        public void SetId()
+        {
+            this.Id = Guid.NewGuid();
         }
         #endregion
     }

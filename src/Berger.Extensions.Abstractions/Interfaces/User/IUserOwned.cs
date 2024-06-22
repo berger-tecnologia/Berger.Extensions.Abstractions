@@ -1,10 +1,9 @@
 ﻿namespace Berger.Extensions.Abstractions
 {
-    public interface IMedia
+    public interface IUserOwned : IBaseEntity<Guid>
     {
         #region Properties
-        string Alt { get; set; }
-        bool Featured { get; set; }
+        public Guid UserId { get; set; }
         #endregion
     }
 }

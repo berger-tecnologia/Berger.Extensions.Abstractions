@@ -7,7 +7,7 @@
         #endregion
 
         #region Methods
-        void SetId(T id);
+        void SetId(T Id);
         #endregion
     }
 }
