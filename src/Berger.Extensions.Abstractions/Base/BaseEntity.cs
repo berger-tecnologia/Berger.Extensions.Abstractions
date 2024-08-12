@@ -1,4 +1,6 @@
-﻿namespace Berger.Extensions.Abstractions
+﻿using System.Net.Http.Headers;
+
+namespace Berger.Extensions.Abstractions
 {
     public class BaseEntity : Auditable, IBaseEntity<Guid>
     {
@@ -13,7 +15,15 @@
         }
         public void SetId()
         {
-            this.Id = Guid.NewGuid();
+            Initialize();
+        }
+        public void Initialize()
+        {
+            Id = Guid.NewGuid();
+        }
+        public Guid GetId()
+        {
+            return Id;
         }
         #endregion
     }

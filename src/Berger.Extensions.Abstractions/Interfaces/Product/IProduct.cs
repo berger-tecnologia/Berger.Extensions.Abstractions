@@ -8,7 +8,7 @@
 
         #region Methods
         void SetMedia(Guid id, string url, bool featured = false);
-        void SetCategory(Guid categoryId, string name);
+        //void SetCategory(Guid categoryId, string name);
         //void SetReview(Guid productId, int score);
         void Highlight();
         #endregion
