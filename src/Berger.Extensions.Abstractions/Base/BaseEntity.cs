@@ -1,11 +1,17 @@
-﻿using System.Net.Http.Headers;
-
-namespace Berger.Extensions.Abstractions
+﻿namespace Berger.Extensions.Abstractions
 {
     public class BaseEntity : Auditable, IBaseEntity<Guid>
     {
         #region Properties
         public Guid Id { get; set; }
+        #endregion
+
+        #region Constructors
+        public BaseEntity() { }
+        public BaseEntity(Guid id)
+        {
+            this.SetId(id);
+        }
         #endregion
 
         #region Methods
