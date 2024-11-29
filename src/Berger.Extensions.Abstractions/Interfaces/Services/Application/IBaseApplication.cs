@@ -11,7 +11,7 @@
         TSource Manage(TSource source);
         void Delete(Guid Id);
 
-        // Apagar
+        // Temp
         List<TSource> GetByEntityId(Guid id);
         List<TSource> GetByEntityTypeId(Guid id);
     }

@@ -2,6 +2,6 @@
 {
     public interface IElementType<T>
     {
-        T ElementType { get; set; }
+        T AssetType { get; set; }
     }
 }
