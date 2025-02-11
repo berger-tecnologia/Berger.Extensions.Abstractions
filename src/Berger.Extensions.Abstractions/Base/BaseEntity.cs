@@ -1,4 +1,6 @@
-﻿namespace Berger.Extensions.Abstractions
+﻿using Berger.Extensions.Abstractions;
+
+namespace Berger.Extensions.Abstractions
 {
     public class BaseEntity : Auditable, IBaseEntity<Guid>
     {
