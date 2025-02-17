@@ -5,7 +5,7 @@
         T MessageFormat { get; }
         string Body { get; }
         string Subject { get; }
-        string Recipient { get; }
+        string Target { get; }
         Guid? PhoneId { get; set; }
         Guid ApplicationId { get; set; }
         Guid? CultureId { get; set; }
