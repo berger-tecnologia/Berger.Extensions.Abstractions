@@ -2,7 +2,6 @@
 {
     public interface IEntityTypeApplication<TSource, TDestination> : IBaseApplication<TSource, TDestination> where TSource : BaseEntity where TDestination : BaseEntity
     {
-        #region Methods
-        #endregion
+        List<TSource> GetByEntityTypeId(Guid entityTypeId);
     }
 }

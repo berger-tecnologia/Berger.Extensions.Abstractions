@@ -1,6 +1,4 @@
-﻿using Berger.Extensions.Abstractions;
-
-namespace Berger.Extensions.Abstractions
+﻿namespace Berger.Extensions.Abstractions
 {
     public class BaseEntity : Auditable, IBaseEntity<Guid>
     {
@@ -10,6 +8,7 @@ namespace Berger.Extensions.Abstractions
 
         #region Constructors
         public BaseEntity() { }
+
         public BaseEntity(Guid id)
         {
             this.SetId(id);
