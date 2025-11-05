@@ -3,25 +3,23 @@
     public class Auditable : IAuditable
     {
         #region Properties
-        public Guid? ModifiedBy { get; set; }
         public bool Deleted { get; set; } = false;
         public DateTime CreatedOn { get; set; } = DateTime.UtcNow;
         public DateTime? DeletedOn { get; set; }
-        public DateTime? ModifiedOn { get; set; }
+        public DateTime? UpdatedOn { get; set; }
         #endregion
 
         #region Methods
         public void Delete()
         {
             this.Deleted = true;
+
+            DeletedOn = DateTime.UtcNow;
         }
-        public void SetModified()
+
+        public void Update()
         {
-            this.ModifiedOn = DateTime.UtcNow;
-        }
-        public void SetDeleted()
-        {
-            this.ModifiedOn = DateTime.UtcNow;
+            this.UpdatedOn = DateTime.UtcNow;
         }
         #endregion
     }
