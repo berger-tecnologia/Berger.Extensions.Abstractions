@@ -8,7 +8,7 @@
 
             var file = @"NU_3774151682_01OUT2024_22DEZ2024.ofx";
 
-            var ofxDocument = parser.Import(new FileStream(file, FileMode.Open));
+            var ofx = parser.Import(new FileStream(file, FileMode.Open));
         }
     }
 }
