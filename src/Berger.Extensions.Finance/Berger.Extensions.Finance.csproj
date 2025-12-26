@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<Nullable>disable</Nullable>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<TargetFramework>net10.0</TargetFramework>
+	</PropertyGroup>
+
+	<ItemGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+		<ProjectReference Include="$(berger-open-source)\Berger.Extensions.Abstractions\src\Berger.Extensions.Abstractions\Berger.Extensions.Abstractions.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Compile Update="Ofx\Dados.Designer.cs">
+	    <DesignTime>True</DesignTime>
+	    <AutoGen>True</AutoGen>
+	    <DependentUpon>Dados.resx</DependentUpon>
+	  </Compile>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <EmbeddedResource Update="Ofx\Dados.resx">
+	    <Generator>ResXFileCodeGenerator</Generator>
+	    <LastGenOutput>Dados.Designer.cs</LastGenOutput>
+	  </EmbeddedResource>
+	</ItemGroup>
+</Project>

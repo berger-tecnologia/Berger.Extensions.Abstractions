@@ -1,0 +1,56 @@
+using System.ComponentModel;
+
+namespace Berger.Extensions.Finance.Ofx
+{
+    public enum TransactionType
+    {
+        [Description("Basic Credit")]
+        CREDIT,
+
+        [Description("Basic Debit")]
+        DEBIT,
+
+        [Description("Interest")]
+        INT,
+
+        [Description("Dividend")]
+        DIV,
+
+        [Description("Fee")]
+        FEE,
+
+        [Description("Service Charge")]
+        SRVCHG,
+
+        [Description("Deposit")]
+        DEP,
+
+        [Description("ATM transfer")]
+        ATM,
+
+        [Description("Point of Sale transfer")]
+        POS,
+
+        [Description("Transfer")]
+        XFER,
+
+        [Description("Check")]
+        CHECK,
+
+        [Description("Payment")]
+        PAYMENT,
+
+        [Description("Cash Withdrawl")]
+        CASH,
+
+        [Description("Direct Deposit")]
+        DIRECTDEP,
+
+        [Description("Seller Initiated Debit")]
+        DIRECTDEBIT,
+
+        [Description("Repeating Payment")]
+        REPEATPMT,
+        OTHER,
+    }
+}
