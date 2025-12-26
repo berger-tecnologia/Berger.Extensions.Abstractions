@@ -1,9 +1,15 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 	<PropertyGroup>
+<<<<<<< HEAD:src/Berger.Extensions.Finance.Test/Berger.Extensions.Finance.Test.csproj
 		<OutputType>Exe</OutputType>
 		<TargetFramework>net9.0</TargetFramework>
 		<ImplicitUsings>enable</ImplicitUsings>
 		<Nullable>disable</Nullable>
+=======
+		<Nullable>disable</Nullable>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<TargetFramework>net10.0</TargetFramework>
+>>>>>>> 5f168a1152b3c4d60cd5972cadf7cdebca40d399:src/Berger.Extensions.Abstractions/Berger.Extensions.Abstractions.csproj
 	</PropertyGroup>
 
 	<ItemGroup>
