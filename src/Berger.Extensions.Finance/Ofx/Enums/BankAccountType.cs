@@ -15,7 +15,6 @@ namespace Berger.Extensions.Finance.Ofx
 
         [Description("Line of Credit")]
         CREDITLINE,
-
         NA,
 
         [Description("Home Loan")]

@@ -23,4 +23,8 @@
 	    <LastGenOutput>Dados.Designer.cs</LastGenOutput>
 	  </EmbeddedResource>
 	</ItemGroup>
+
+	<ItemGroup>
+	  <Folder Include="Ofx\Enums\" />
+	</ItemGroup>
 </Project>

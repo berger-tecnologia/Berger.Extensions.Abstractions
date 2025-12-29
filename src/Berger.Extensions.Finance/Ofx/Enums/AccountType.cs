@@ -13,7 +13,7 @@ namespace Berger.Extensions.Finance.Ofx
         [Description("Accounts Payable")]
         AP,
 
-        [Description("Accounts Recievable")]
+        [Description("Accounts Receivable")]
         AR,
         NA,
     }
