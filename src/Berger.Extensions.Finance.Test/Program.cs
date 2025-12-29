@@ -1,10 +1,12 @@
-﻿namespace Berger.Extensions.Finance.Test
+﻿using Berger.Extensions.Finance.Ofx;
+
+namespace Berger.Extensions.Finance.Test
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            var parser = new OFXDocumentParser();
+            var parser = new DocumentParser();
 
             var file = @"NU_3774151682_01OUT2024_22DEZ2024.ofx";
 

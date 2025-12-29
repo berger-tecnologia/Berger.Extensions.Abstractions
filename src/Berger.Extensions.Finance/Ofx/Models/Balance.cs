@@ -1,7 +1,7 @@
-using System;
 using System.Xml;
 using System.Globalization;
 using Berger.Extensions.Abstractions;
+using Berger.Extensions.Finance.Ofx.Constants;
 
 namespace Berger.Extensions.Finance.Ofx
 {
@@ -19,7 +19,7 @@ namespace Berger.Extensions.Finance.Ofx
         {
             this.SetId();
 
-            var tempLedgerBalance = ledgerNode.GetValue("//BALAMT");
+            var tempLedgerBalance = ledgerNode.GetValue(BalancePath.BalanceAmount);
 
             if (!String.IsNullOrEmpty(tempLedgerBalance))
             {
@@ -38,7 +38,7 @@ namespace Berger.Extensions.Finance.Ofx
             }
             else
             {
-                var tempAvaliableBalance = avaliableNode.GetValue("//BALAMT");
+                var tempAvaliableBalance = avaliableNode.GetValue(BalancePath.BalanceAmount);
 
                 if (!String.IsNullOrEmpty(tempAvaliableBalance))
                 {
@@ -48,10 +48,10 @@ namespace Berger.Extensions.Finance.Ofx
                 {
                     throw new OFXParseException("Avaliable balance has not been set");
                 }
-                AvaliableBalanceDate = avaliableNode.GetValue("//DTASOF").ToDate();
+                AvaliableBalanceDate = avaliableNode.GetValue(BalancePath.DateAsOf).ToDate();
             }
 
-            LedgerBalanceDate = ledgerNode.GetValue("//DTASOF").ToDate();
+            LedgerBalanceDate = ledgerNode.GetValue(BalancePath.DateAsOf).ToDate();
         }
     }
 }

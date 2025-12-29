@@ -1,5 +1,6 @@
 using System.Xml;
 using Berger.Extensions.Abstractions;
+using Berger.Extensions.Finance.Ofx.Constants;
 
 namespace Berger.Extensions.Finance.Ofx
 {
@@ -45,8 +46,8 @@ namespace Berger.Extensions.Finance.Ofx
 
             AccountType = type;
 
-            AccountIdentificador = node.GetValue("//ACCTID");
-            AccountKey = node.GetValue("//ACCTKEY");
+            AccountIdentificador = node.GetValue(AccountPath.AccountId);
+            AccountKey = node.GetValue(AccountPath.AccountKey);
 
             switch (AccountType)
             {
@@ -69,11 +70,11 @@ namespace Berger.Extensions.Finance.Ofx
         /// </summary>
         private void InitializeBank(XmlNode node)
         {
-            BankID = node.GetValue("//BANKID");
-            BranchID = node.GetValue("//BRANCHID");
+            BankID = node.GetValue(BankPath.BankId);
+            BranchID = node.GetValue(BankPath.BranchId);
 
             //Get Bank Account Type from XML
-            string bankAccountType = node.GetValue("//ACCTTYPE");
+            string bankAccountType = node.GetValue(AccountPath.AccountType);
 
             //Check that it has been set
             if (String.IsNullOrEmpty(bankAccountType))
