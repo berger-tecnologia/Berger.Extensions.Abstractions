@@ -4,8 +4,4 @@
 		<ImplicitUsings>enable</ImplicitUsings>
 		<TargetFramework>net10.0</TargetFramework>
 	</PropertyGroup>
-
-	<ItemGroup>
-		<Folder Include="Models\" />
-	</ItemGroup>
 </Project>

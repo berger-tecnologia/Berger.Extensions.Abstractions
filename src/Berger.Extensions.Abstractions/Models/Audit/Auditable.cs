@@ -7,6 +7,7 @@
         public DateTime CreatedOn { get; set; } = DateTime.UtcNow;
         public DateTime? DeletedOn { get; set; }
         public DateTime? UpdatedOn { get; set; }
+
         #endregion
 
         #region Methods
